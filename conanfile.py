@@ -23,14 +23,14 @@ class FollyConan(ConanFile):
     exports_sources = ["CMakeLists.txt", "folly.patch"]
     generators = "cmake"
     requires = (
-        "boost/1.67.0@conan/stable",
+        "Boost/[>=1.64.0]@camposs/stable",
         "double-conversion/3.1.1@bincrafters/stable",
         "gflags/2.2.1@bincrafters/stable",
         "glog/20181109@bincrafters/stable",
         "libevent/2.1.8@bincrafters/stable",
         "lz4/1.8.3@bincrafters/stable",
         "OpenSSL/1.0.2p@conan/stable",
-        "zlib/1.2.11@conan/stable",
+        "zlib/1.2.11@camposs/stable",
         "zstd/1.3.5@bincrafters/stable"
     )
     _source_subfolder = "source_subfolder"
